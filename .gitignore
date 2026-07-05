@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# scratch / tool artifacts
+/.superpowers/
+/cdn.21st.dev_bundled_1932_html/
+/static/

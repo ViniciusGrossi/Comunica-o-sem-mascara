@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
+import localFont from "next/font/local";
 import { LenisProvider } from "@/components/ui/lenis-provider";
 import { StickyNavbar } from "@/components/ui/navbar";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
@@ -20,12 +21,18 @@ const inter = Inter({
   display: "swap",
 });
 
+const dancingScript = localFont({
+  src: "../../public/fonts/DancingScript-Bold.ttf",
+  variable: "--font-signature",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Comunicação Sem Máscaras — Nil Nunes",
+    title: "Comunicação Sem Máscaras — Nyll Nunes",
   description:
     "Aprenda a se comunicar com confiança, autenticidade e autoridade. Programa online para mulheres que querem ocupar espaços sem medo de julgamentos.",
   openGraph: {
-    title: "Comunicação Sem Máscaras — Nil Nunes",
+  title: "Comunicação Sem Máscaras — Nyll Nunes",
     description:
       "Aprenda a se comunicar com confiança, autenticidade e autoridade. Para mulheres que querem ocupar os espaços que desejam.",
     url: "https://comunicacaosemmascaras.com.br",
@@ -45,7 +52,7 @@ const jsonLd = {
     "Programa online para mulheres que querem se comunicar com confiança, autenticidade e autoridade — sem precisar se transformar em outra pessoa.",
   provider: {
     "@type": "Person",
-    name: "Nil Nunes",
+    name: "Nyll Nunes",
     url: "https://comunicacaosemmascaras.com.br",
   },
   url: "https://comunicacaosemmascaras.com.br",
@@ -60,7 +67,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className={`${cormorant.variable} ${inter.variable}`}>
+    <html lang="pt-BR" className={`${cormorant.variable} ${inter.variable} ${dancingScript.variable}`}>
       <body>
         <a
           href="#main-content"

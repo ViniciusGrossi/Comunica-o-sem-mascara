@@ -15,7 +15,7 @@ export function FinalCta() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(135deg, #1A0508 0%, #5C1020 50%, #1A0508 100%)",
+            "linear-gradient(135deg, var(--color-neutral-dark) 0%, var(--color-secondary) 50%, var(--color-neutral-dark) 100%)",
         }}
         aria-hidden
       />
@@ -35,11 +35,17 @@ export function FinalCta() {
       <Particles className="absolute inset-0 h-full w-full" />
 
       <div className="relative mx-auto max-w-[var(--container-max)] px-6 text-center">
-        <RevealWrapper direction="up">
+        <RevealWrapper direction="none">
+          <span className="eyebrow justify-center text-gold">
+            Última chamada
+          </span>
+        </RevealWrapper>
+
+        <RevealWrapper delay={100} direction="up">
           <TextReveal
             text="Quantas oportunidades você ainda vai perder por medo de se posicionar?"
             as="h2"
-            className="text-white"
+            className="mt-6 text-white"
           />
         </RevealWrapper>
 
@@ -54,6 +60,10 @@ export function FinalCta() {
           <CtaButton size="lg" className="mt-8">
             Quero fazer parte do Comunicação Sem Máscaras
           </CtaButton>
+          <p className="mt-5 text-xs text-white/40">
+            Acesso imediato · 12 meses de acesso · 7 dias de garantia
+            incondicional
+          </p>
         </RevealWrapper>
       </div>
     </section>

@@ -9,9 +9,10 @@ export function FAQ() {
     <section id="faq" className="bg-white py-[var(--section-py)]">
       <div className="mx-auto max-w-2xl px-6">
         <RevealWrapper direction="up">
-          <h2 className="text-center text-neutral-dark">
-            Perguntas frequentes
-          </h2>
+          <div className="text-center">
+            <span className="eyebrow text-primary/70">Ainda em dúvida?</span>
+            <h2 className="mt-4 text-neutral-dark">Perguntas frequentes</h2>
+          </div>
         </RevealWrapper>
 
         <RevealWrapper delay={100} direction="up">

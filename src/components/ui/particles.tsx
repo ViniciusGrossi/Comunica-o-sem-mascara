@@ -56,6 +56,7 @@ export function Particles({ className }: { className?: string }) {
 
         c.beginPath();
         c.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        // canvas fillStyle can't resolve CSS custom properties — literal RGB kept in sync with --color-gold
         c.fillStyle = `rgba(212, 165, 116, ${p.opacity})`;
         c.fill();
       }
