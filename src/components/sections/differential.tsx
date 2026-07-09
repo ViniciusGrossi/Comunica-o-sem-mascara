@@ -47,23 +47,23 @@ export function Differential() {
           <RevealWrapper direction="left">
             <TiltCard
               max={6}
-              className="group flex h-full flex-col rounded-2xl border border-neutral-dark/10 bg-neutral-light/60 p-8 opacity-70 grayscale-[0.3] transition-all duration-500 hover:opacity-100 hover:grayscale-0 hover:border-primary/20 hover:shadow-lg hover:shadow-primary/5"
+              className="group flex h-full flex-col rounded-2xl border border-neutral-dark/10 bg-neutral-light/60 p-8 opacity-90 grayscale-[0.15] transition-all duration-500 hover:opacity-100 hover:grayscale-0 hover:border-primary/20 hover:shadow-lg hover:shadow-primary/5"
             >
-              <span className="text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-neutral-dark/40">
+              <span className="text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-neutral-dark/65">
                 O caminho comum
               </span>
-              <h3 className="mt-2 text-lg font-semibold text-neutral-dark/60 transition-colors duration-300 group-hover:text-primary">
+              <h3 className="mt-2 text-lg font-semibold text-neutral-dark/80 transition-colors duration-300 group-hover:text-primary">
                 Cursos de oratória
               </h3>
               <ul className="mt-6 space-y-5">
                 {COMMON.map((item) => (
                   <li
                     key={item.label}
-                    className="flex flex-col gap-1 text-neutral-dark/55 transition-colors duration-300 group-hover:text-neutral-dark/80"
+                    className="flex flex-col gap-1 text-neutral-dark/80 transition-colors duration-300 group-hover:text-neutral-dark"
                   >
                     <div className="flex items-center gap-3">
                       <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-neutral-dark/8 transition-colors duration-300 group-hover:bg-primary/10">
-                        <X className="h-3 w-3 text-neutral-dark/40 transition-colors duration-300 group-hover:text-primary" />
+                        <X className="h-3 w-3 text-neutral-dark/55 transition-colors duration-300 group-hover:text-primary" />
                       </span>
                       <span className="font-medium">{item.label}</span>
                     </div>
@@ -88,7 +88,7 @@ export function Differential() {
                 className="absolute inset-x-0 top-0 z-10 h-1 rounded-t-2xl bg-gradient-to-r from-gold-deep via-gold to-gold-deep transition-all duration-500 group-hover:from-gold-light group-hover:via-gold group-hover:to-gold-light"
                 aria-hidden
               />
-              <span className="relative z-10 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-gold-deep transition-colors duration-300 group-hover:text-gold-light">
+              <span className="relative z-10 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-primary transition-colors duration-300 group-hover:text-gold-light">
                 O nosso caminho
               </span>
               <h3 className="relative z-10 mt-2 font-serif text-xl font-semibold italic text-primary transition-colors duration-300 group-hover:text-white">
